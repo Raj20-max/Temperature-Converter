@@ -1,0 +1,206 @@
+
+.theme-toggle-btn {
+  position: absolute;
+  top: 60px;
+  right: 32px;
+  background: rgba(255,255,255,0.7);
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  z-index: 10;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 4px 16px rgba(9, 132, 227, 0.12);
+}
+
+body.dark-theme {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #f1f1f1;
+}
+
+body.dark-theme .container.premium-glass {
+  background: rgba(44, 62, 80, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.28);
+  border: 1px solid rgba(44, 62, 80, 0.18);
+}
+
+body.dark-theme .premium-heading {
+  color: #f1f1f1;
+  text-shadow: 0 2px 8px rgba(44, 62, 80, 0.18);
+}
+
+body.dark-theme .premium-label {
+  color: #dfe6e9;
+}
+
+body.dark-theme .premium-input {
+  background: rgba(44, 62, 80, 0.55);
+  border: 1.5px solid #636e72;
+  color: #f1f1f1;
+}
+
+body.dark-theme .premium-input::placeholder {
+  color: #b2bec3;
+}
+
+body.dark-theme .premium-footer {
+  color: #b2bec3;
+}
+
+body.dark-theme .refresh-btn {
+  background: linear-gradient(90deg, #636e72 0%, #0984e3 100%);
+  color: #fff;
+}
+
+body.dark-theme .refresh-btn:hover {
+  background: linear-gradient(90deg, #0984e3 0%, #636e72 100%);
+}
+.refresh-btn {
+  display: block;
+  margin: 18px auto 0 auto;
+  padding: 10px 28px;
+  font-size: 1.08rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #0984e3 0%, #00b894 100%);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.refresh-btn:hover {
+  background: linear-gradient(90deg, #00b894 0%, #0984e3 100%);
+  box-shadow: 0 4px 16px rgba(9, 132, 227, 0.12);
+}
+.converter-icon {
+  display: block;
+  margin: 0 auto 18px auto;
+  width: 110px;
+  height: 110px;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  object-fit: cover;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  color: #222;
+  position: relative;
+}
+
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.container.premium-glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px 32px 10px 32px;
+  width: 95%;
+  max-width: 480px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s;
+}
+
+.container.premium-glass:hover {
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.28);
+}
+
+.premium-heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2d3436;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+.premium-temp {
+  width: 100%;
+  padding: 14px 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 8px;
+}
+
+.premium-label {
+  color: #636e72;
+  font-size: 1.05rem;
+  font-weight: 600;
+  min-width: 90px;
+  text-align: right;
+  letter-spacing: 0.5px;
+}
+
+.premium-input {
+  width: 180px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 8px 12px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1.5px solid #dfe6e9;
+  border-radius: 8px;
+  color: #222;
+  font-size: 1.05rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  text-align: left;
+}
+
+.premium-input:focus {
+  border-color: #0984e3;
+  box-shadow: 0 4px 16px rgba(9, 132, 227, 0.08);
+}
+
+.premium-input::placeholder {
+  color: #b2bec3;
+  font-weight: 400;
+}
+
+
+.premium-footer {
+  margin-top: 18px;
+  font-size: 0.98rem;
+  color: #636e72;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.heart {
+  color: #ff6b81;
+  font-size: 1.1em;
+  vertical-align: middle;
+}

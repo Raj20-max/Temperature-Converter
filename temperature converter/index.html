@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter - Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/png" href="GPT_Image_1_temperature_convertor_the_text_should_display_in_b_0.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container premium-glass">
+  <img src="GPT_Image_1_temperature_convertor_the_text_should_display_in_b_0.png" alt="Temperature Converter Icon" class="converter-icon" />
+  <h1 class="heading premium-heading">Temperature Converter</h1>
+    <div class="temp-container premium-temp">
+      <label for="celsius" class="premium-label">Celsius</label>
+      <input type="number" id="celsius" name="celsius" class="input premium-input" placeholder="Enter Temperature" oninput="computeTemp(event)">
+    </div>
+    <div class="temp-container premium-temp">
+      <label for="fahrenheit" class="premium-label">Fahrenheit</label>
+      <input type="number" id="fahrenheit" name="fahrenheit" class="input premium-input" placeholder="Enter Temperature" oninput="computeTemp(event)">
+    </div>
+    <div class="temp-container premium-temp">
+      <label for="kelvin" class="premium-label">Kelvin</label>
+      <input type="number" id="kelvin" name="kelvin" class="input premium-input" placeholder="Enter Temperature" oninput="computeTemp(event)">
+    </div>
+    <button class="refresh-btn" onclick="refreshFields()">&#x21bb; Refresh</button>
+    <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+      <span id="theme-icon">&#x1F311;</span>
+    </button>
+  <div class="premium-footer">Made with <span class="heart">&#10084;</span> MultiMax</div>
+  </div>
+  <script>
+    function refreshFields() {
+      document.getElementById('celsius').value = '';
+      document.getElementById('fahrenheit').value = '';
+      document.getElementById('kelvin').value = '';
+    }
+
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      body.classList.toggle('dark-theme');
+      if (body.classList.contains('dark-theme')) {
+        icon.innerHTML = '&#x2600;'; // Sun
+      } else {
+        icon.innerHTML = '&#x1F311;'; // Moon
+      }
+    }
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
+    <script src="index.js"></script>
+  </body>
+</html>
